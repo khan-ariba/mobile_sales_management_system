@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="images">
+    <file>circle.png</file>
+    <file>PngItem_2854727.png</file>
+    <file>back-arrow-1767531-1502435.png</file>
+    <file>search.png</file>
+    <file>simple-background-blue-simple-minimalism-wallpaper-preview.jpg</file>
+  </qresource>
+</RCC>

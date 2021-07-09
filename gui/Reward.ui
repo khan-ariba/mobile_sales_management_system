@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reward</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="project51.qrc">
+    <normaloff>:/images/circle.png</normaloff>:/images/circle.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QComboBox{
+background-color:white;
+border: none;
+border-radius: 4px;
+}
+QRadioButton
+{color:white;
+}
+QLabel
+{color:white;
+}
+#Frame
+{background:url(:/images/simple-background-blue-simple-minimalism-wallpaper-preview.jpg);
+}
+QPushButton
+{background:white;
+color:black;
+border-radius:15px;
+}
+QPushButton:hover
+{color:#333;
+border-radius:15px;
+background:#49ebff;
+}
+QTextEdit
+{background:rgb(255, 255, 255);
+border-radius:15px;
+}
+QLineEdit
+{background:transparent;
+border:none;
+color: white;
+border-bottom:1px solid #e2e2e2;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnstart">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>290</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">selection-background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>START</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lucky Draw 🎰</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnmail">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>290</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send e-mail</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>291</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Email</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources>
+  <include location="project51.qrc"/>
+ </resources>
+ <connections/>
+</ui>

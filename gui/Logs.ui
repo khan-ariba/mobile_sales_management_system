@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Logs</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="project51.qrc">
+    <normaloff>:/images/circle.png</normaloff>:/images/circle.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QComboBox{
+background-color:white;
+border: none;
+border-radius: 4px;
+}
+
+QRadioButton
+{color:white;
+}
+QLabel
+{color:white;
+}
+#Frame
+{background:url(:/images/simple-background-blue-simple-minimalism-wallpaper-preview.jpg);
+}
+QPushButton
+{background:white;
+color:black;
+border-radius:15px;
+}
+QPushButton:hover
+{color:#333;
+border-radius:15px;
+background:#49ebff;
+}
+QTextEdit
+{background:rgb(255, 255, 255);
+border-radius:15px;
+}
+QLineEdit
+{background:transparent;
+border:none;
+color: white;
+border-bottom:1px solid #e2e2e2;
+}
+#btnreset{
+background:transparent;
+color:white;
+font-weight: bold;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnreset">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>79</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>Show last 5  </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>79</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Last 5 Logs:</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>150</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::UpDownArrows</enum>
+   </property>
+   <property name="displayFormat">
+    <string>dd-MM-yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>501</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <property name="cornerButtonEnabled">
+    <bool>true</bool>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>150</number>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>37</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string notr="true">Timestamp</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Remarks</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="btnsearch">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>230</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+   <property name="icon">
+    <iconset resource="project51.qrc">
+     <normaloff>:/images/search.png</normaloff>:/images/search.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>20</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>User Logs 📃</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="project51.qrc"/>
+ </resources>
+ <connections/>
+</ui>

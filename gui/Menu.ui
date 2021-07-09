@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>991</width>
+    <height>583</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Dashboard</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="project51.qrc">
+    <normaloff>:/images/circle.png</normaloff>:/images/circle.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background :rgb(21, 121, 147);
+}
+QComboBox{
+background-color:white;
+border: none;
+border-radius: 4px;
+}
+QRadioButton
+{color:white;
+}
+QLabel
+{color:white;
+}
+QPushButton
+{background:white;
+color:black;
+border-radius:15px;
+}
+QPushButton:hover
+{color:#333;
+border-radius:15px;
+background:#49ebff;
+}
+QTextEdit
+{background:rgb(255, 255, 255);
+border-radius:15px;
+}
+QLineEdit
+{background:transparent;
+border:none;
+color: white;
+border-bottom:1px solid #e2e2e2;
+}
+#table1
+{border:none;}
+#table2
+{border:none;}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Select Brand for Models:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnshow">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>30</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show Sales</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnsearch">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>30</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="project51.qrc">
+      <normaloff>:/images/search.png</normaloff>:/images/search.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtsearch">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>40</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table1">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>911</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>150</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Transaction ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Brand</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Model</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantity</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Customer Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Address</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Phone</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Bill</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="table2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>911</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>150</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Brand</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Model</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Price</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Features</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantity</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btnlogout">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>30</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Logout</string>
+    </property>
+    <property name="icon">
+     <iconset resource="project51.qrc">
+      <normaloff>:/images/PngItem_2854727.png</normaloff>:/images/PngItem_2854727.png</iconset>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbBrand">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>41</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>991</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>500</width>
+     <height>0</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menuMobile_Dat">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>153</y>
+      <width>159</width>
+      <height>102</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Product</string>
+    </property>
+    <addaction name="actionAdd_New"/>
+    <addaction name="actionEdit"/>
+   </widget>
+   <widget class="QMenu" name="menuGrowth">
+    <property name="title">
+     <string>Growth</string>
+    </property>
+    <addaction name="actionShow_Charts"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>More</string>
+    </property>
+    <addaction name="actionUsers"/>
+    <addaction name="actionLogs"/>
+    <addaction name="actionLucky_Draw"/>
+   </widget>
+   <addaction name="menuMobile_Dat"/>
+   <addaction name="menuGrowth"/>
+   <addaction name="menuAdmin"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_New">
+   <property name="text">
+    <string>Add New</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionUpdate">
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </action>
+  <action name="actionDel">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionAdd_Entry">
+   <property name="text">
+    <string>Add Entry</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="actionAll_Products">
+   <property name="text">
+    <string>All Products</string>
+   </property>
+  </action>
+  <action name="actionSend_Reward">
+   <property name="text">
+    <string>Send Reward</string>
+   </property>
+  </action>
+  <action name="actionAdd_Brand">
+   <property name="text">
+    <string>Add Brand</string>
+   </property>
+  </action>
+  <action name="actionBest_Selling">
+   <property name="text">
+    <string>Best Selling</string>
+   </property>
+  </action>
+  <action name="actionnd">
+   <property name="text">
+    <string>nd</string>
+   </property>
+  </action>
+  <action name="actionShow_Charts">
+   <property name="text">
+    <string>Show Charts</string>
+   </property>
+  </action>
+  <action name="actionUsers">
+   <property name="text">
+    <string>Users</string>
+   </property>
+  </action>
+  <action name="actionLogs">
+   <property name="text">
+    <string>Logs</string>
+   </property>
+  </action>
+  <action name="actionLucky_Draw">
+   <property name="text">
+    <string>Lucky Draw</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="project51.qrc"/>
+ </resources>
+ <connections/>
+</ui>
