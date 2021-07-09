@@ -14,4 +14,4 @@ Following Python libraries are required to run this project.
 
 - [@anirudhdabral](https://www.github.com/anirudhdabral)
 
-  
+  ![App Screenshot](/Project_Screenshots/1.png)

@@ -7,7 +7,6 @@ from Charts import Charts
 from Logs import Logs
 from Users import Users
 
-
 class Menu(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -108,6 +107,7 @@ class Menu(QMainWindow):
         btn = fn.questionDialog("Confirmation", "Do you want to Logout?")
         if btn == QMessageBox.Yes:
             self.close()
+
 
     def search(self):
         self.table1.setVisible(True)
