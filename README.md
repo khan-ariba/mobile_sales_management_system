@@ -13,6 +13,7 @@ Following Python libraries are required to run this project.
 ## Authors
 
 - [@anirudhdabral](https://www.github.com/anirudhdabral)
+## Screenshots
 
 ![App Screenshot](/Project_Screenshots/1.png)
 
