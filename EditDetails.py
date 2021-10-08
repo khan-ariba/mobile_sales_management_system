@@ -79,7 +79,6 @@ class Edit(QFrame):
                 fn.showDialog("Another phone with same name already exists!")
 
 
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     edit = Edit()
