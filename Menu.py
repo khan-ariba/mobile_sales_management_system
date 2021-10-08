@@ -122,7 +122,6 @@ class Menu(QMainWindow):
             self.cursor.execute(query, (self.searchtext,))
             self.dataset = self.cursor.fetchall()
             rowcount = len(self.dataset)
-            print(rowcount)
             if rowcount == 0:
                 fn.showDialog("Record does not exist.")
             self.table1.setRowCount(rowcount)
